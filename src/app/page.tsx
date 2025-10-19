@@ -1,0 +1,13 @@
+import Hero from "@/slides/hero/Hero";
+
+export default function Home() {
+  return (
+    <div
+      className="px-4 first:pt-10 md:px-6"
+    >
+      <div className="mx-auto flex w-full max-w-7xl flex-col items-center">
+        <Hero/>
+      </div>
+    </div>
+  )
+}
