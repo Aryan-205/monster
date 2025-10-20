@@ -14,7 +14,7 @@ const flavorTextures = {
 };
 
 const metalMaterial = new THREE.MeshStandardMaterial({
-  roughness: 0.3,
+  roughness: 0.5,
   metalness: 1,
   color: "#bbbbbb",
 });
@@ -43,7 +43,7 @@ export function SodaCan({
   const label = labels[flavor];
 
   return (
-    <group {...props} dispose={null} scale={[scale * 0.8, scale * 1.2, scale * 0.8]} rotation={[0, -Math.PI, 0]}>
+    <group {...props} dispose={null} scale={[scale * 0.8, scale * 1.2, scale]} rotation={[0.1, -Math.PI, 0]}>
       <mesh
         castShadow
         receiveShadow

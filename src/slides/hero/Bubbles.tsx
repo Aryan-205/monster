@@ -12,7 +12,7 @@ const o = new THREE.Object3D();
 export function Bubbles({
   count = 300,
   speed = 5,
-  bubbleSize = 0.05,
+  bubbleSize = 0.01,
   opacity = 0.5,
   repeat = true,
 }) {
@@ -29,6 +29,7 @@ export function Bubbles({
   const material = new THREE.MeshStandardMaterial({
     transparent: true,
     opacity,
+    color: "#90ED27"
   });
 
   // Runs once to create and place our bubbles
@@ -70,7 +71,7 @@ export function Bubbles({
     }
 
     // Assign current body color to bubble so it looks natural
-    material.color = new THREE.Color(document.body.style.backgroundColor);
+    material.color = new THREE.Color("#90ED27");
 
     for (let i = 0; i < count; i++) {
       meshRef.current.getMatrixAt(i, o.matrix);

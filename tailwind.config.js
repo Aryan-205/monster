@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-alpino)", "sans-serif"],
+        sans: ["var(--font-tank)", "sans-serif"],
       },
       keyframes: {
         "slide-left": {

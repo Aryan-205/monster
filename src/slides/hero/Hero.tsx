@@ -59,17 +59,6 @@ export default function Hero(){
       });
 
       scrollTl
-        // .fromTo(
-        //   "body",
-        //   {
-        //     backgroundColor: "#FDE047",
-        //   },
-        //   {
-        //     backgroundColor: "#D9F99D",
-        //     overwrite: "auto",
-        //   },
-        //   1,
-        // )
         .from(".text-side-heading .split-char", {
           scale: 1.3,
           y: 40,
@@ -101,7 +90,7 @@ export default function Hero(){
       <div className="grid bg-black">
         <div className="grid h-screen place-items-center">
           <div className="grid auto-rows-min place-items-center text-center">
-            <h1 className="hero-header text-6xl font-black uppercase leading-[.8] text-orange-500 md:text-[8rem] lg:text-[10rem]">
+            <h1 className="hero-header text-6xl font-extrabold uppercase leading-[.8] text-orange-500 md:text-[8rem] lg:text-[10rem]">
               <TextSplitter
                 text="Unleash the"
                 wordDisplayStyle="block"
@@ -120,7 +109,7 @@ export default function Hero(){
               Full Throttle. Maximum Energy
             </p>
             <button
-              className="rounded-xl bg-orange-600 px-5 py-4 text-center text-xl font-bold uppercase tracking-wide text-black transition-colors duration-150 hover:bg-orange-700 md:text-2xl hero-button mt-12 bg-[#90ED27]"
+              className="rounded-xl px-5 py-4 text-center text-xl font-bold uppercase tracking-wide text-black transition-colors duration-150 hover:bg-orange-700 md:text-2xl hero-button mt-12 bg-[#90ED27]"
             >Fuel up</button>
           </div>
         </div>
@@ -130,10 +119,10 @@ export default function Hero(){
             className="w-full md:hidden"
           />
           <div>
-            <h2 className="text-side-heading text-balance text-6xl font-black uppercase text-white lg:text-8xl">
+            <h2 className="text-side-heading text-balance text-6xl font-extrabold uppercase text-[#90ED27] lg:text-8xl">
               <TextSplitter text="Try all five flavours" />
             </h2>
-            <p className="text-side-body mt-4 max-w-xl text-balance text-xl font-normal text-neutral-500">
+            <p className="text-side-body mt-4 max-w-xl text-balance text-xl font-normal text-neutral-300">
               Our soda is made with real fruit juice and a touch of cane sugar. We never use artificial sweeteners or high fructose corn syrup. Try all five flavors and find your favorite!
             </p>
           </div>

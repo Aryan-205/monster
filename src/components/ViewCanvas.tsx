@@ -35,7 +35,6 @@ export default function ViewCanvas({}: Props) {
       >
         <Suspense fallback={null}>
           <View.Port />
-          <FloatingCan/>
         </Suspense>
       </Canvas>
       <Loader />
