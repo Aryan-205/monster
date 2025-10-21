@@ -15,6 +15,7 @@ export function Bubbles({
   bubbleSize = 0.01,
   opacity = 0.5,
   repeat = true,
+  bubbleColor = "#90ED27"
 }) {
   const meshRef = useRef<THREE.InstancedMesh>(null);
 
@@ -71,7 +72,7 @@ export function Bubbles({
     }
 
     // Assign current body color to bubble so it looks natural
-    material.color = new THREE.Color("#90ED27");
+    material.color = new THREE.Color(bubbleColor);
 
     for (let i = 0; i < count; i++) {
       meshRef.current.getMatrixAt(i, o.matrix);

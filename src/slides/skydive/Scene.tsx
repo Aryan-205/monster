@@ -136,7 +136,7 @@ export default function Scene({ sentence, flavor }: SkyDiveProps) {
 
   return (
     <group ref={groupRef}>
-      <Bubbles count={100} speed={2} repeat={true} />
+      
       {/* Can */}
       <group rotation={[0, 0, 0.5]}>
         <FloatingCan
@@ -149,6 +149,7 @@ export default function Scene({ sentence, flavor }: SkyDiveProps) {
           <pointLight intensity={30} color="#8C0413" decay={0.6} />
         </FloatingCan>
       </group>
+      <Bubbles count={100} speed={2} repeat={true} bubbleColor="#ffffff"/>
 
       {/* Clouds */}
       <Clouds ref={cloudsRef}>
