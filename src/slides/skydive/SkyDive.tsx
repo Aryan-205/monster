@@ -1,6 +1,8 @@
 "use client";
 import Scene from "./Scene";
 import { View } from "@react-three/drei";
+
+
 export default function SkyDive(){
   return (
     <div
@@ -10,7 +12,7 @@ export default function SkyDive(){
       <View className="h-screen w-screen">
         <Scene
           flavor="lemonLime"
-          sentence="Dive into the reality"
+          sentence="Dive into the Reality"
         />
       </View>
     </div>

@@ -1,4 +1,5 @@
 "use client";
+
 import { Cloud, Clouds, Environment, Text } from "@react-three/drei";
 import { useRef } from "react";
 import * as THREE from "three";
@@ -8,12 +9,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import FloatingCan from "@/components/FloatingCan";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
+import { Bubbles } from "../hero/Bubbles";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
+type Flavor = "lemonLime" | "grape" | "blackCherry" | "strawberryLemonade" | "watermelon";
+
 type SkyDiveProps = {
   sentence: string | null;
-  flavor: "lemonLime";
+  flavor: Flavor;
 };
 
 export default function Scene({ sentence, flavor }: SkyDiveProps) {
@@ -100,7 +104,7 @@ export default function Scene({ sentence, flavor }: SkyDiveProps) {
 
     scrollTl
       .to("body", {
-        backgroundColor: "#C0F0F5",
+        backgroundColor: "#000000",
         overwrite: "auto",
         duration: 0.1,
       })
@@ -132,6 +136,7 @@ export default function Scene({ sentence, flavor }: SkyDiveProps) {
 
   return (
     <group ref={groupRef}>
+      <Bubbles count={100} speed={2} repeat={true} />
       {/* Can */}
       <group rotation={[0, 0, 0.5]}>
         <FloatingCan
@@ -153,7 +158,7 @@ export default function Scene({ sentence, flavor }: SkyDiveProps) {
 
       {/* Text */}
       <group ref={wordsRef}>
-        {sentence && <ThreeText sentence={sentence} color="#F97315" />}
+        {sentence && <ThreeText sentence={sentence} color="#90ED27" />}
       </group>
 
       {/* Lights */}
@@ -181,7 +186,7 @@ function ThreeText({
       scale={isDesktop ? 1 : 0.5}
       color={color}
       material={material}
-      font="/fonts/TanklagerVF.woff2"
+      font="/fonts/Alpino-Variable.woff"
       fontWeight={900}
       anchorX={"center"}
       anchorY={"middle"}

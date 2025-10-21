@@ -1,6 +1,7 @@
 import AlternatingText from "@/slides/alternatingText/AlternatingText";
 import BigText from "@/slides/bigText/BigText";
 import Carousel from "@/slides/carousel/Carousel";
+import { Bubbles } from "@/slides/hero/Bubbles";
 import Hero from "@/slides/hero/Hero";
 import SkyDive from "@/slides/skydive/SkyDive";
 
@@ -9,8 +10,10 @@ export default function Home() {
     <>
     <div className="px-4 md:px-6">
       <div className="mx-auto flex w-full max-w-7xl flex-col items-center">
-        {/* <Hero/> */}
-        {/* <SkyDive/> */}
+        <Hero/>
+      </div>
+      <div className="mx-auto flex w-full max-w-7xl flex-col items-center h-[300vh] overflow-hidden">
+        <SkyDive/>
       </div>
     </div>
     <Carousel/>

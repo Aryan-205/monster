@@ -90,7 +90,7 @@ export default function Hero(){
       <div className="grid bg-black">
         <div className="grid h-screen place-items-center">
           <div className="grid auto-rows-min place-items-center text-center">
-            <h1 className="hero-header text-6xl font-extrabold uppercase leading-[.8] text-orange-500 md:text-[8rem] lg:text-[10rem]">
+            <h1 className="hero-header text-6xl font-extrabold uppercase leading-[.8] text-orange-500 md:text-[8rem] lg:text-[10rem] pt-24">
               <TextSplitter
                 text="Unleash the"
                 wordDisplayStyle="block"
@@ -102,14 +102,14 @@ export default function Hero(){
                 className="hero-header-word text-[#90ED27]"
               />
             </h1>
-            <h2 className="hero-subheading mt-12 text-5xl font-semibold text-white lg:text-6xl">
+            <h2 className="hero-subheading mt-8 text-5xl font-semibold text-white lg:text-6xl">
               Ultimate Energy
             </h2>
             <p className="hero-body text-2xl font-normal text-white">
               Full Throttle. Maximum Energy
             </p>
             <button
-              className="rounded-xl px-5 py-4 text-center text-xl font-bold uppercase tracking-wide text-black transition-colors duration-150 hover:bg-orange-700 md:text-2xl hero-button mt-12 bg-[#90ED27]"
+              className="rounded-xl px-5 py-4 text-center text-xl font-bold uppercase tracking-wide text-black transition-colors duration-150 hover:bg-orange-700 md:text-2xl hero-button mt-8 bg-[#90ED27]"
             >Fuel up</button>
           </div>
         </div>
