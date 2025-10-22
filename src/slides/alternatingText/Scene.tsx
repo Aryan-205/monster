@@ -2,7 +2,7 @@
 
 import { Environment } from "@react-three/drei";
 import { useRef } from "react";
-import { DirectionalLight, Group } from "three";
+import { Group } from "three";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";

@@ -1,4 +1,5 @@
 export default function BigText(){
+  
   return (
     <section
       className="min-h-screen w-screen overflow-hidden bg-black text-[#90ED27] text-center"

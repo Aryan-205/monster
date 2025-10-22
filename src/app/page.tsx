@@ -1,7 +1,6 @@
 import AlternatingText from "@/slides/alternatingText/AlternatingText";
 import BigText from "@/slides/bigText/BigText";
 import Carousel from "@/slides/carousel/Carousel";
-import { Bubbles } from "@/slides/hero/Bubbles";
 import Hero from "@/slides/hero/Hero";
 import SkyDive from "@/slides/skydive/SkyDive";
 

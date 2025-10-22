@@ -116,6 +116,8 @@ export default function Hero(){
 
         <div className="text-side relative z-[80] grid h-screen items-center gap-4 md:grid-cols-2 px-12">
           <img
+            src="all-cans-bunched.png"
+            alt="#"
             className="w-full md:hidden"
           />
           <div>

@@ -4,16 +4,13 @@ import { Canvas } from "@react-three/fiber";
 import { View } from "@react-three/drei";
 import { Suspense } from "react";
 import dynamic from "next/dynamic";
-import FloatingCan from "./FloatingCan";
 
 const Loader = dynamic(
   () => import("@react-three/drei").then((mod) => mod.Loader),
   { ssr: false },
 );
 
-type Props = {};
-
-export default function ViewCanvas({}: Props) {
+export default function ViewCanvas() {
   return (
     <>
       <Canvas
